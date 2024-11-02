@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Friends</title>
+    <link rel="stylesheet" href="./css/Estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <div class="head">
+        <div class="animate__animated animate__rubberBand animate__repeat-3">
+            <a href="#"><img src="./recursos/icons/logo.png" alt="Logo de empresa" class="logo"></a>
+
+        </div>
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#servicio">Servicios</a>
+            <a href="#adopcion">Adopciones</a>
+            <a href="#contact-form">Acercade</a>
+        </nav>
+    </div>
+    <header>
+        <div class="contenedor-texto">
+            <div class="texto">
+                <h1 class="animate__animated animate__backInDown animate__delay-0.5s">Pets Friends</h1>
+                <p class="animate__animated animate__backInDown animate__delay-0.5s">¿Estas buscando un compañero de vida para ti o un familiar?</p>
+                <P class="animate__animated animate__backInDown animate__delay-0.5s"><strong>Pets Friends</strong>, encontraras ese amigo que estara siempre para ti en todo momento</P>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-container">
+            <div>
+                <img src="https://images.pexels.com/photos/4061379/pexels-photo-4061379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+            </div>
+            <div class="about-text">
+                <h2>Pets Friends ¿Quienes somos?</h2>
+                <hr>
+                <p>Bienvenidos a nuestra tienda de adopción de mascotas. Aquí encontrarás una gran variedad de animales
+                    cariñosos y juguetones esperando encontrar su hogar para siempre.<br><br>
+                    Nuestro espacio está diseñado para brindar comodidad tanto a los animales como a las personas que
+                    los visitan. Contamos con áreas de juego y socialización para que puedas conocer a tu futura mascota
+                    y asegurarte de que es el compañero adecuado para ti y tu familia.<br><br>
+                    Todos nuestros animales han pasado por un proceso de revisión veterinaria exhaustiva y se les ha
+                    brindado la atención médica necesaria para garantizar que estén saludables y listos para su nueva
+                    vida. También ofrecemos servicios de asesoramiento y seguimiento posteriores a la adopción para
+                    asegurarnos de que tanto los animales como sus nuevos dueños estén felices y adaptados.<br><br>
+                    Nuestro objetivo es encontrar hogares amorosos y responsables para cada uno de nuestros animales.
+                    ¡Te invitamos a visitarnos y encontrar a tu nuevo mejor amigo!<br></p>
+            </div>
+        </section>
+
+
+
+        <section class="servicio-contenedor" id="servicio">
+            <h2 class="titulo">Nuestros Servicios</h2>
+            <div class="imagen-servicio">
+                <article class="card">
+                    <div class="card-image">
+                        <img src="./recursos/img/img_mascota.jpg" alt="adopta una mascota" class="imagen">
+                    </div>
+                    <div class="card-text">
+                        <h2>Adopta una nueva mascota y dale un nuevo hogar donde ser feliz.</h2>
+                        <a href="#">Leer mas</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="./recursos/img/img-veterinaria.jpg" alt="veterinaria" class="imagen">
+                    </div>
+                    <div class="card-text">
+                        <h2>Contamos con veterinarias para el cuidado de tu nueva mascota.</h2>
+                        <a href="#">Leer mas</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="./recursos/img/img_sc.jpg" alt="servicio al cliente" class="imagen">
+                    </div>
+                    <div class="card-text">
+                        <h2>Nuestro grupo de atencion al cliente atendera todas sus consultas.</h2>
+                        <a href="#">Leer mas</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="info" id="adopcion">
+            <h2>Adopta tu nueva Mascota</h2>
+            <div class="contenedor-info">
+
+                <div class="info-pet">
+                    <img src="./recursos/img/img-perro.jpg" alt="perro">
+                    <h4>Adopta un perro</h4>
+                </div>
+
+                <div class="info-pet">
+                    <img src="./recursos/img/img-gatos.jpg" alt="gato">
+                    <h4>Adopta un gato</h4>
+                </div>
+
+                <div class="info-pet">
+                    <img src="./recursos/img/img-conejo.jpg" alt="conejo">
+                    <h4>Adopta un conejo</h4>
+                </div>
+
+                <div class="info-pet">
+                    <img src="./recursos/img/img-canario.jpg" alt="canarios">
+                    <h4>Adopta un canario</h4>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <form id="contact-form" method="post" action="#">
+        <div class="contact-form">
+            <h2>¡Contactanos!</h2>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+
+    <footer>
+        <article class="footer-pagina">
+  
+        <div class="Acercade" id="acercade">
+       <div class="pie-cont">
+          <h4>Telefono</h4>
+          <p>+(506) 88-88-88-88</p>
+       </div>
+       <div class="pie-cont">
+          <h4>Email</h4> 
+          <p>Pet15FS@gmail.com</p>
+       </div>
+       <div class="pie-cont">
+          <h4>Dirección</h4>
+          <p>Curridabat, San Jose CR.</p>
+        </div>
+       </div>
+  
+       <div class="pie-pagina">
+        <a href="https://Twitter.com/" class="enlace" > 
+          <img src="./Recursos/icons/twitter.png" alt="Twitter" height="50" width="50" class="twitter"></a>
+          </div>
+          <div class="pie-pagina">
+              <a href="https://Instagram.com/" class="enlace">
+              <img src="./Recursos/icons/Insta.png" alt="Instagram"height="50" width="50" class="insta" ></a>
+              
+              </div>
+              <div class="pie-pagina">
+                 <a href="https://Facebook.com/" class="enlace">
+                  <img src="./Recursos/icons/facebook.png" alt="Facebook"height="50" width="50" class="facebook"></a>
+                  </div>
+              </article>
+  
+              <h4 class="final"><strong> Sebastian Arias Rodriguez </strong></h4> 
+              <br>
+              <h4 class="final"><strong> Stacy Nicole Cruz Perez </strong></h4> 
+
+      </footer>
+</body>
+
+</html>
